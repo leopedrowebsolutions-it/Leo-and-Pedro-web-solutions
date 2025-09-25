@@ -1,0 +1,83 @@
+main{
+    background-color: #D9D9D9;
+    width: 95%;
+    margin: auto;
+}
+main p{
+    padding: 0.5%;
+}
+/* Contenedor general del equipo */
+.equipo-container {
+  background-color: #93C5FD; /* Celeste */
+  width: 95%;
+  margin: 2rem auto;
+  padding: 2rem;
+  display: flex;
+  justify-content:space-evenly;
+    
+  position: relative;
+  border-radius: 10px;
+}
+
+/* Cada persona (foto + linkedin) */
+.persona {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Círculo para la foto */
+.foto {
+  width: 160px;   /* 🔹 tamaño de la foto */
+  height: 160px;  /* 🔹 tamaño de la foto */
+  border-radius: 50%;
+  background-color: white; /* fondo blanco */
+  border: 2px solid #2563eb; /* opcional, borde azul */
+}
+
+/* Botón/link de LinkedIn */
+.linkedin {
+  background-color: #2563eb; /* azul LinkedIn */
+  color: white;
+  border-radius: 50%;
+  width: 32px;  /* 🔹 tamaño del ícono */
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+/* Decoraciones */
+.decoracion.puntos {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.decoracion.puntos span {
+  width: 16px;  /* 🔹 diámetro de los puntos */
+  height: 16px;
+  border-radius: 50%;
+  background-color: #2563eb; /* azul */
+}
+
+/* Líneas inclinadas */
+.decoracion.lineas {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 220px; /* 🔹 largo de las líneas */
+  height: 10px;  /* 🔹 grosor de las líneas */
+  background: repeating-linear-gradient(
+    45deg, 
+    white 0 4px, 
+    transparent 4px 12px
+  );
+}
