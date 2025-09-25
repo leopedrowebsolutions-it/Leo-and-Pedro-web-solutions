@@ -1,3 +1,14 @@
 .navbar-collapse .navbar-nav .nav-link:hover{
     color: #60A5FA ;
 }
+/* Reducir altura de la navbar */
+.navbar {
+  padding-top: 0.25rem;   /* 🔹 menos padding arriba */
+  padding-bottom: 0.25rem; /* 🔹 menos padding abajo */
+}
+
+/* Achicar logo */
+.navbar-brand img {
+  height: 60px; /* 🔹 antes era 84px */
+  width: auto;
+}

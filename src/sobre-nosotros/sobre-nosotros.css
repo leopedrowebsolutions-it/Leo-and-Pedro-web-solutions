@@ -8,10 +8,10 @@
 .container{
     display: flex;
     align-items: center;
-    margin: 2% auto 2% auto;
+    margin: 2% 20% 2% 0%;
 }
 
 img{
-    width: 40%;
+    width: 60%;
     height: auto;
 }
