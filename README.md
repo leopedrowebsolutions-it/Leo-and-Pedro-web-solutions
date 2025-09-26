@@ -1,59 +1,60 @@
-# LeoAndPedroSoftwareSolution
+# 💻 Leo & Pedro Software Solution
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.4.
+Bienvenidos a **Leo & Pedro Software Solution**, un equipo de jóvenes desarrolladores argentinos apasionados por la tecnología y la innovación.  
+Nuestra misión es crear soluciones web a medida que acompañen a cada cliente en su camino digital.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🌟 Sobre Nosotros
 
-```bash
-ng serve
-```
+Somos **Leo y Pedro**, dos estudiantes universitarios que decidimos transformar nuestra pasión por la programación en un proyecto profesional.  
+Nos caracteriza:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- 🚀 Espíritu emprendedor  
+- 💡 Creatividad en cada proyecto  
+- 🤝 Comunicación clara y constante  
+- 📚 Formación académica en crecimiento  
+- 🔒 Compromiso y confianza con cada cliente  
 
-## Code scaffolding
+En **Leo & Pedro Software Solution** creemos en construir proyectos sólidos y duraderos, poniendo siempre al cliente en el centro.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## 🛠️ Servicios
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Ofrecemos soluciones digitales personalizadas, entre ellas:
 
-```bash
-ng generate --help
-```
+- 🌐 **Desarrollo Web a Medida**  
+- 🎨 **Diseño Responsivo y Moderno**  
+- ⚙️ **Aplicaciones Interactivas SPA**  
+- 📈 **Optimización y Rendimiento**  
+- 🔗 **Integración con APIs y Plataformas**  
 
-## Building
+---
 
-To build the project run:
+## 👥 Equipo
 
-```bash
-ng build
-```
+- **Leonardo Sánchez**  
+  Estudiante en desarrollo de aplicaciones | Frontend, Backend y Base de datos  
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- **Pedro Terán**  
+  Estudiante en desarrollo de aplicaciones | Frontend, Backend y Lógica de Negocio  
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 📫 Contacto
 
-```bash
-ng test
-```
+📍 Argentina  
+✉️ [Correo de contacto](leopedrowebsolutions@gmail.com)  
+🔗 [LinkedIn Leonardo](https://www.linkedin.com/in/leonardo-s%C3%A1nchez-603648210/)  
+🔗 [LinkedIn Pedro](https://www.linkedin.com/in/pedro-terán-b9358b267/)  
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## 📜 Filosofía
 
-```bash
-ng e2e
-```
+> *“Más que dos personas, somos un equipo que decidió transformar su pasión en un camino profesional.”*  
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+En **Leo & Pedro Software Solution** cada proyecto es una oportunidad para crecer, innovar y dejar huella en el mundo digital.
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
