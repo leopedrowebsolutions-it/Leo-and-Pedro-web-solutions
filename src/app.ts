@@ -6,10 +6,11 @@ import { FooterPageComponent } from './footer-page/footer-page.component';
 
 import { Equipo } from "./equipo/equipo";
 import { SobreNosotros } from "./sobre-nosotros/sobre-nosotros";
+import { Servicios } from "./servicios/servicios";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, BarraDeNavegacion, FooterPageComponent, Equipo, SobreNosotros],
+  imports: [RouterOutlet, BarraDeNavegacion, FooterPageComponent, Equipo, SobreNosotros, Servicios],
 
   templateUrl: './app.html',
   styleUrls: ['./app.css']

@@ -2,27 +2,25 @@
   <div class="container-fluid">
     <!-- Logo -->
     <a class="navbar-brand" href="#">
-      <img src="../assets/logo.png" alt="logo" >
+      <img src="../assets/logo.png" alt="logo">
     </a>
 
     <!-- Menú centrado -->
-   <div class="collapse navbar-collapse justify-content-center
-              
-   
-   " id="navbarSupportedContent">
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
 
       <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">Sobre Nosotros</a>
+          <a class="nav-link" (click)="mover('SobreNosotros')">Sobre Nosotros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Servicios</a>
+          <a class="nav-link" (click)="mover('Servicios')">Servicios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Equipo</a>
+          <a class="nav-link" (click)="mover('Equipo')">Equipo</a>
         </li>
       </ul>
+
     </div>
-    <app-booton-contactanos/>
+    <app-booton-contactanos />
   </div>
 </nav>

@@ -8,5 +8,10 @@ import { BootonContactanosComponent } from "../booton-contactanos/booton-contact
   styleUrl: './barra-de-navegacion.css'
 })
 export class BarraDeNavegacion {
-
+  mover(seccion: string): void {
+    const el = document.getElementById(seccion);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }
 }
