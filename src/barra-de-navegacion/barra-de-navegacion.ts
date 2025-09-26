@@ -11,7 +11,8 @@ export class BarraDeNavegacion {
   mover(seccion: string): void {
     const el = document.getElementById(seccion);
     if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      el.scrollIntoView({ behavior: 'smooth' , block: "start" });
+            
     }
   }
 }
