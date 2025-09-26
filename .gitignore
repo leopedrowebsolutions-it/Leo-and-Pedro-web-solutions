@@ -41,4 +41,5 @@ testem.log
 .DS_Store
 Thumbs.db
 
-assets
+# Ignorar la carpeta de assets dentro de src
+/src/assets/
