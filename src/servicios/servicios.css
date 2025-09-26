@@ -1,0 +1,22 @@
+*{
+    margin: 2%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.clickeable{
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+}
+img{
+    width: 5%;
+    height: auto;
+    margin-right: 0px;
+}
+
+
+
+.invisible{
+    display: none;
+}
