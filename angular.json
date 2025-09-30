@@ -12,7 +12,7 @@
       "architect": {
         "build": {
           "builder": "@angular/build:application",
-          "options": {
+       "options": {
   "outputPath": "dist/leo-and-pedro-software-solution",
   "baseHref": "/Leo-and-Pedro-web-solutions/",
   "browser": "src/main.ts",
@@ -42,6 +42,7 @@
     "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
   ]
 }
+
 ,
           "configurations": {
             "production": {
