@@ -12,3 +12,11 @@
   height: 60px; /* 🔹 antes era 84px */
   width: auto;
 }
+@media screen and (max-width: 450px) {
+  .navbar {
+    width: 460px;
+  }
+  app-booton-contactanos{
+    margin-right: 15px;
+  }
+}
