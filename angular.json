@@ -14,9 +14,10 @@
           "builder": "@angular/build:application",
        "options": {
   "outputPath": "dist/leo-and-pedro-software-solution",
-  "baseHref": "/Leo-and-Pedro-web-solutions/",
-  "browser": "src/main.ts",
+  "index": "src/index.html",
+  "main": "src/main.ts",
   "tsConfig": "tsconfig.app.json",
+  "baseHref": "/Leo-and-Pedro-web-solutions/",
   "assets": [
     {
       "glob": "**/*",
