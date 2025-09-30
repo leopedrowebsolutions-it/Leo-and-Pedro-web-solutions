@@ -15,4 +15,17 @@ img{
     width: 60%;
     height: auto;
 }
+@media screen and (max-width: 450px) {
+    .container{
+        display: flex;
+  
+        flex-direction: column;
+        margin: 2% 5% 2% 5%;
+    }
+    img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
 

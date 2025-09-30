@@ -1,15 +1,17 @@
-main{
-    background-color: #D9D9D9;
-    width: 95%;
-    margin: auto;
+main {
+  background-color: #D9D9D9;
+  width: 95%;
+  margin: auto;
 }
-main p{
-    padding: 0.5%;
+
+main p {
+  padding: 0.5%;
 }
 
 /* Contenedor general del equipo */
 .equipo-container {
-  background-color: #93C5FD; /* Celeste */
+  background-color: #93C5FD;
+  /* Celeste */
   width: 95%;
   margin: 2rem auto;
   padding: 2rem;
@@ -29,28 +31,37 @@ main p{
 
 /* Círculo para la foto */
 .foto {
-  width: 200px;   /* 🔹 tamaño de la foto */
-  height: 250px;  /* 🔹 tamaño de la foto */
+  width: 200px;
+  /* 🔹 tamaño de la foto */
+  height: 250px;
+  /* 🔹 tamaño de la foto */
   border-radius: 50%;
-  background-color: white; /* fondo blanco */
-  border: 2px solid #2563eb; /* opcional, borde azul */
-  overflow: hidden; /* 🔹 asegura que la img quede recortada al círculo */
+  background-color: white;
+  /* fondo blanco */
+  border: 2px solid #2563eb;
+  /* opcional, borde azul */
+  overflow: hidden;
+  /* 🔹 asegura que la img quede recortada al círculo */
 }
 
 /* 🔹 La imagen dentro del círculo */
 .foto img {
   width: 100%;
   height: 100%;
-  object-fit:cover; /* 🔹 recorta sin deformar */
-  border-radius: 50%; /* 🔹 asegura bordes redondeados */
+  object-fit: cover;
+  /* 🔹 recorta sin deformar */
+  border-radius: 50%;
+  /* 🔹 asegura bordes redondeados */
 }
 
 /* Botón/link de LinkedIn */
 .linkedin {
-  background-color: #2563eb; /* azul LinkedIn */
+  background-color: #2563eb;
+  /* azul LinkedIn */
   color: white;
   border-radius: 50%;
-  width: 36px;  /* 🔹 lo agrandé un poco */
+  width: 36px;
+  /* 🔹 lo agrandé un poco */
   height: 36px;
   display: flex;
   align-items: center;
@@ -58,7 +69,8 @@ main p{
   text-decoration: none;
   font-weight: bold;
   font-family: Arial, sans-serif;
-  font-size: 14px; /* 🔹 tamaño de la "in" */
+  font-size: 14px;
+  /* 🔹 tamaño de la "in" */
 }
 
 /* Decoraciones */
@@ -72,10 +84,12 @@ main p{
 }
 
 .decoracion.puntos span {
-  width: 16px;  /* 🔹 diámetro de los puntos */
+  width: 16px;
+  /* 🔹 diámetro de los puntos */
   height: 16px;
   border-radius: 50%;
-  background-color: #2563eb; /* azul */
+  background-color: #2563eb;
+  /* azul */
 }
 
 /* Líneas inclinadas */
@@ -83,11 +97,34 @@ main p{
   position: absolute;
   bottom: 1rem;
   right: 1rem;
-  width: 220px; /* 🔹 largo de las líneas */
-  height: 10px;  /* 🔹 grosor de las líneas */
-  background: repeating-linear-gradient(
-    45deg, 
-    white 0 4px, 
-    transparent 4px 12px
-  );
+  width: 220px;
+  /* 🔹 largo de las líneas */
+  height: 10px;
+  /* 🔹 grosor de las líneas */
+  background: repeating-linear-gradient(45deg,
+      white 0 4px,
+      transparent 4px 12px);
+}
+
+@media screen and (max-width: 450px) {
+  .foto {
+    width: 100px;
+    /* 🔹 tamaño de la foto */
+    height: 150px;
+    /* 🔹 tamaño de la foto */
+    border-radius: 80%;
+    background-color: white;
+    /* fondo blanco */
+    border: 2px solid #2563eb;
+    /* opcional, borde azul */
+    overflow: hidden;
+    /* 🔹 asegura que la img quede recortada al círculo */
+  }
+  .Sequipo-container{
+    width: 60%;
+    margin: 20%;
+  }
+  .decoracion.lineas{
+    display: none;
+  }
 }
