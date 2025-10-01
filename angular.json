@@ -2,42 +2,49 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
-"projects": {
-  "leo-and-pedro-software-solution": {
-    "projectType": "application",
-    "root": "",
-    "sourceRoot": "src",
-    "architect": {
-      "build": {
-        "builder": "@angular-devkit/build-angular:application",
-      "builder": "@angular-devkit/build-angular:browser",
-"options": {
-  "outputPath": "dist/leo-and-pedro-software-solution",
-  "index": "src/index.html",
-  "main": "src/main.ts",
-  "polyfills": ["zone.js"],
-  "tsConfig": "tsconfig.app.json",
-  "assets": ["src/favicon.ico", "src/assets"],
-  "styles": ["src/styles.css"],
-  "scripts": [],
-  "baseHref": "/Leo-and-Pedro-web-solutions/"
-}
-
-,
-        "configurations": {
-          "production": {
-            "optimization": true,
-            "outputHashing": "all",
-            "sourceMap": false,
-            "namedChunks": false,
-            "extractLicenses": true
+  "projects": {
+    "leo-and-pedro-software-solution": {
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": "src",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/leo-and-pedro-software-solution",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ],
+            "baseHref": "/Leo-and-Pedro-web-solutions/"
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true
+            }
           }
         }
       }
     }
-  }
-}
-,
+  },
   "cli": {
     "analytics": "8a8be3d4-f0f8-479f-bb31-32279c829ef0"
   }
