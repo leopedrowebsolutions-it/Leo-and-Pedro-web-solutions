@@ -29,8 +29,7 @@
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-            ],
-            "baseHref": "/Leo-and-Pedro-web-solutions/"
+            ]
           },
           "configurations": {
             "production": {
