@@ -1,11 +1,37 @@
-.navbar-collapse .navbar-nav .nav-link:hover{
-    color: #60A5FA ;
-}
+
 /* Reducir altura de la navbar */
 .navbar {
   padding-top: 0.25rem;   /* 🔹 menos padding arriba */
   padding-bottom: 0.25rem; /* 🔹 menos padding abajo */
+  border-radius: 0% 0% 10% 10%;
 }
+
+
+
+
+
+/*agrando los anchor*/
+.nav-link{
+  font-size: 2rem;
+}
+
+.nav-link:hover{
+  animation: slideIn 1.5s ease infinite;
+}
+@keyframes slideIn {
+  0%, 100% {
+    color: #555556;
+    
+  }
+  50% {
+    color: #60A5FA ;  
+    transform: scale(1.1);
+  }
+
+}
+
+
+
 
 /* Achicar logo */
 .navbar-brand img {
@@ -18,3 +44,4 @@
     margin-right: 15px;
   }
 }
+

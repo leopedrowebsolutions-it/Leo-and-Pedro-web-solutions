@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common'; // Importar esto
+import { CommonModule } from '@angular/common';
 
 @Component({
+  standalone: true, 
+  imports: [CommonModule],
   selector: 'app-servicios',
-  imports: [CommonModule], // Agregar CommonModule aquí
   templateUrl: './servicios.html',
-  styleUrl: './servicios.css'
+  styleUrls: ['./servicios.css']
 })
 export class Servicios {
 

@@ -8,11 +8,17 @@
 .container{
     display: flex;
     align-items: center;
-    margin: 2% 20% 2% 0%;
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+li{
+    font-size: large;
+    text-shadow: 0 0 black;
 }
 
 img{
-    width: 60%;
+    width: 45%;
     height: auto;
 }
 @media screen and (max-width: 450px) {
