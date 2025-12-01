@@ -1,26 +1,41 @@
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F3F4F6;">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:  #374151;">
   <div class="container-fluid">
-    <!-- Logo -->
+
+    <!-- LOGO -->
     <a class="navbar-brand" href="#">
       <img src="assets/logo.png" alt="logo">
     </a>
 
-    <!-- Menú centrado -->
-    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+    <!-- HAMBURGUESA MOBILE -->
+    <button 
+      class="navbar-toggler ms-auto d-lg-none"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" (click)="mover('SobreNosotros')">Sobre Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" (click)="mover('Servicios')">Servicios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" (click)="mover('Equipo')">Equipo</a>
-        </li>
+    <!-- MENU (SIEMPRE CENTRADO EN DESKTOP) -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-4">
+        <li class="nav-item"><a class="nav-link" (click)="mover('SobreNosotros')">Sobre Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" (click)="mover('Servicios')">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" (click)="mover('Equipo')">Equipo</a></li>
       </ul>
-
     </div>
-    <app-booton-contactanos />
+
+    <!-- CONTACTANOS (SIEMPRE A LA DERECHA EN DESKTOP) -->
+    <div class="d-none d-lg-block ms-auto">
+      <app-booton-contactanos></app-booton-contactanos>
+    </div>
+
+  </div>
+
+  <!-- CONTACTANOS MOBILE (visible SIEMPRE, fuera del collapse) -->
+  <div class="d-lg-none text-center mt-2">
+    <app-booton-contactanos></app-booton-contactanos>
   </div>
 </nav>

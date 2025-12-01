@@ -1,47 +1,84 @@
+/* MOBILE FIRST */
 
-/* Reducir altura de la navbar */
+/* Navbar compacta */
 .navbar {
-  padding-top: 0.25rem;   /* 🔹 menos padding arriba */
-  padding-bottom: 0.25rem; /* 🔹 menos padding abajo */
-  border-radius: 0% 0% 10% 10%;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+
+  background-color: #374151 !important; /* gris oscuro */
 }
 
-
-
-
-
-/*agrando los anchor*/
-.nav-link{
-  font-size: 2rem;
+/* Texto celeste en toda la navbar */
+.navbar a,
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #60A5FA !important;
 }
 
-.nav-link:hover{
-  animation: slideIn 1.5s ease infinite;
-}
-@keyframes slideIn {
-  0%, 100% {
-    color: #555556;
-    
-  }
-  50% {
-    color: #60A5FA ;  
-    transform: scale(1.1);
-  }
-
-}
-
-
-
-
-/* Achicar logo */
+/* Logo */
 .navbar-brand img {
-  height: 60px; /* 🔹 antes era 84px */
+  height: 50px;
   width: auto;
 }
-@media screen and (max-width: 450px) {
 
-  app-booton-contactanos{
-    margin-right: 15px;
+/* Contenedor mobile */
+.navbar .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Links mobile */
+.nav-link {
+  font-size: 1.5rem;
+}
+
+/* Hover animado */
+.nav-link:hover {
+  animation: slideIn 1.5s ease infinite;
+}
+
+@keyframes slideIn {
+  0%, 100% { color: #93C5FD; } /* celeste más claro */
+  50% { 
+    color: white;
+    transform: scale(1.1);
   }
 }
 
+/* Color icono menú hamburguesa */
+.navbar-toggler {
+  border-color: #60A5FA !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%2360A5FA' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* BOTÓN CONTACTO OPCIONAL */
+.btn-contacto {
+  color: #60A5FA !important;
+  border-color: #60A5FA !important;
+}
+
+.btn-contacto:hover {
+  background-color: #60A5FA !important;
+  color: #1F2937 !important;
+}
+
+
+/* DESKTOP */
+@media (min-width: 992px) {
+
+  /* LOGO | MENU | CONTACTO */
+  .navbar .container-fluid {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+  }
+
+  /* Menú centrado */
+  #navbarNav {
+    justify-content: center !important;
+  }
+}
