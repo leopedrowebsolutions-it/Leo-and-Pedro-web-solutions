@@ -1,98 +1,97 @@
 <div class="container">
-<!-- creacion -->
-<div class="clickeable" (click)="openPopup(1)">
-<img class="tilde" src="assets/1533737321.svg" alt="">
-<h1>Creacion</h1>
-</div>
 
+    <!-- CREACIÓN -->
+    <div class="clickeable" (click)="openPopup(1)">
+        <img class="tilde" src="assets/1533737321.svg" alt="">
+        <h1>Creación</h1>
+    </div>
 
-    <!-- Popup -->
     <div class="popup-backdrop" *ngIf="isOpen" (click)="closePopup()">
         <div class="popup" (click)="$event.stopPropagation()">
-            <section>
-                <h2>Creacion</h2>
+
+            <section class="popup-text">
+                <h2>Creación</h2>
                 <p>
-                Sabemos que cada persona tiene una idea distinta de cómo quiere mostrarse en internet.
-                Con nuestras habilidades podemos convertir esas ideas en páginas web personalizadas,
+                    Sabemos que cada persona tiene una idea distinta de cómo quiere mostrarse en internet.
+                    Con nuestras habilidades podemos convertir esas ideas en páginas web personalizadas,
                     modernas y fáciles de usar, que reflejen exactamente lo que el cliente desea transmitir.
                 </p>
-                <button class="close-btn" (click)="closePopup()">Cerrar</button>
+                <button type="button" class="close-btn" (click)="closePopup()">Cerrar</button>
             </section>
+
             <img class="imgpopup" src="assets/imgCreacion.png" alt="">
         </div>
     </div>
-<!-- creaion -->
 
 
-<!-- desarrollo -->
-
+    <!-- DESARROLLO -->
     <div class="clickeable" (click)="openPopup(2)">
         <img class="tilde" src="assets/1533737321.svg" alt="">
         <h1>Desarrollo</h1>
     </div>
 
-
-    <!-- Popup -->
     <div class="popup-backdrop" *ngIf="isOpen2" (click)="closePopup()">
         <div class="popup" (click)="$event.stopPropagation()">
-            <section>
+
+            <section class="popup-text">
                 <h2>Desarrollo</h2>
                 <p>
-                    Tu idea ya está clara. Sabés lo que querés y cómo querés que se vea. Nosotros tenemos todo lo necesario para convertirla en un sitio funcional, atractivo y listo para crecer. Es hora de hacerlo realidad.
+                    Tu idea ya está clara. Sabés lo que querés y cómo querés que se vea.
+                    Nosotros tenemos todo lo necesario para convertirla en un sitio funcional,
+                    atractivo y listo para crecer. Es hora de hacerlo realidad.
                 </p>
-                <button class="close-btn" (click)="closePopup()">Cerrar</button>
+                <button type="button" class="close-btn" (click)="closePopup()">Cerrar</button>
             </section>
+
             <img class="imgpopup" src="assets/imgDesarrollo.png" alt="">
         </div>
     </div>
-<!-- desarrollo -->
 
-<!-- Mantenimiento -->
+
+    <!-- MANTENIMIENTO -->
     <div class="clickeable" (click)="openPopup(3)">
-    <img class="tilde"  src="assets/1533737321.svg" alt="">
-    <h1>Mantenimiento</h1>
+        <img class="tilde" src="assets/1533737321.svg" alt="">
+        <h1>Mantenimiento</h1>
     </div>
 
-
-    <!-- Popup -->
     <div class="popup-backdrop" *ngIf="isOpen3" (click)="closePopup()">
         <div class="popup" (click)="$event.stopPropagation()">
-            <section>
+
+            <section class="popup-text">
                 <h2>Mantenimiento</h2>
                 <p>
-                    Tu sitio está en marcha, pero mantenerlo activo y seguro es clave. Si usás APIs o integraciones, el mantenimiento técnico es esencial. Nosotros nos encargamos de que todo funcione sin interrupciones, siempre.
+                    Tu sitio está en marcha, pero mantenerlo activo y seguro es clave.
+                    Si usás APIs o integraciones, el mantenimiento técnico es esencial.
+                    Nosotros nos encargamos de que todo funcione sin interrupciones, siempre.
                 </p>
-                <button class="close-btn" (click)="closePopup()">Cerrar</button>
+                <button type="button" class="close-btn" (click)="closePopup()">Cerrar</button>
             </section>
+
             <img class="imgpopup" src="assets/imgMantenimietno.png" alt="">
         </div>
     </div>
 
-<!-- mantenimiento -->
 
-<!-- rediseño -->
+    <!-- REDISEÑO -->
     <div class="clickeable" (click)="openPopup(4)">
-    <img class="tilde" src="assets/1533737321.svg" alt="">
-    <h1>Rediseño</h1>
+        <img class="tilde" src="assets/1533737321.svg" alt="">
+        <h1>Rediseño</h1>
     </div>
 
-
-    <!-- Popup -->
     <div class="popup-backdrop" *ngIf="isOpen4" (click)="closePopup()">
         <div class="popup" (click)="$event.stopPropagation()">
-            <section>
+
+            <section class="popup-text">
                 <h2>Rediseño</h2>
                 <p>
-                    Tu página cumplió su ciclo. Si ya no refleja lo que sos hoy, es momento de rediseñarla. Te ayudamos a actualizarla con diseño moderno, mejor rendimiento y una experiencia que conecte con tu audiencia.
+                    Tu página cumplió su ciclo. Si ya no refleja lo que sos hoy, es momento de rediseñarla.
+                    Te ayudamos a actualizarla con diseño moderno, mejor rendimiento y una experiencia que conecte con tu audiencia.
                 </p>
-                <button class="close-btn" (click)="closePopup()">Cerrar</button>    
+                <button type="button" class="close-btn" (click)="closePopup()">Cerrar</button>
             </section>
+
             <img class="imgpopup" src="assets/imgRedisenio.png" alt="">
         </div>
     </div>
-
-<!-- rediseño -->
-
-
 
 </div>

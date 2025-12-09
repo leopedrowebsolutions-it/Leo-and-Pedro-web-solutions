@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  standalone: true, 
+  standalone: true,
   imports: [CommonModule],
   selector: 'app-servicios',
   templateUrl: './servicios.html',
@@ -16,19 +16,11 @@ export class Servicios {
   isOpen4 = false;
 
   openPopup(valor: number) {
-    switch(valor){
-    case 1:
-      this.isOpen = true;
-      break;
-    case 2:
-      this.isOpen2 = true;
-      break;
-    case 3:
-      this.isOpen3 = true;
-      break;
-    case 4:
-      this.isOpen4 = true;
-      break;
+    switch (valor) {
+      case 1: this.isOpen = true; break;
+      case 2: this.isOpen2 = true; break;
+      case 3: this.isOpen3 = true; break;
+      case 4: this.isOpen4 = true; break;
     }
   }
 

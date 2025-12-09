@@ -1,49 +1,103 @@
-*{
-    margin: 0; /* <- Antes: 2%. Rompía todo el centrado */
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    background-color: #D9D9D9;
-}
-
 /* CONTENEDOR GENERAL */
-.container{
+.container {
+    background-color: #93C5FD;
+    width: 95%;
+    margin: 2rem auto;
+    padding: 2rem;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;   /* Centrado horizontal */
-    gap: 1.5rem;               /* Espacio entre elementos */
-    margin: 2rem auto;         /* Centrado automático */
-    padding: 1rem;
-    max-width: 900px;          /* Limita ancho en desktop */
+    gap: 2rem;
+    position: relative;
     border-radius: 10px;
 }
 
+/* TÍTULO */
+.container p {
+    color: #2563eb;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.container h1 {
+    color: #1e3a8a;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
 /* LISTA */
-li{
-    font-size: large;
-    text-shadow: 0 0 black;
+.container ul {
+    padding-left: 1.2rem;
+}
+
+.container li {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+    color: #1e293b;
 }
 
 /* IMAGEN */
-img{
+.container img {
     width: 45%;
     height: auto;
-    display: block;
+    border-radius: 10px;
+    border: 3px solid #2563eb;
+    background: white;
+    box-shadow: 0 8px 15px rgba(37, 99, 235, 0.25);
 }
 
-/* -- MOBILE -- */
+/* DECORACIONES (opcionales, mismas que equipo) */
+.decoracion.puntos {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.decoracion.puntos span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #2563eb, #60A5FA);
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.6);
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); opacity: 0.7; }
+    50% { transform: translateY(-8px); opacity: 1; }
+}
+
+.decoracion.puntos.top-right {
+    right: 1rem;
+    top: 1rem;
+    flex-direction: row;
+}
+
+.decoracion.puntos.bottom-left {
+    left: 1rem;
+    bottom: 1rem;
+}
+
+/* RESPONSIVE */
 @media (max-width: 992px) {
 
-    .container{
+    .container {
         flex-direction: column;
-        text-align: center;     /* Centra el texto */
-        max-width: 500px;       /* Mejor visual en celulares */
-        margin: 1.5rem auto;    /* Centrado perfecto */
+        width: 100%;
+        padding: 1.5rem;
+        gap: 1.5rem;
+        text-align: center;
     }
 
-    img{
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
+    .container img {
+        width: 90%;
+        margin-top: 1rem;
+    }
+
+    .decoracion.puntos {
+        display: none;
     }
 }

@@ -1,124 +1,118 @@
-/* GENERAL */
-main {
-  background-color: #D9D9D9;
-  width: 95%;
-  margin: auto;
-  padding: 0.5%;
-}
-
-/* QUITAMOS ABSOLUTE PARA QUE NO ROMPA EL RESPONSIVE */
-p {
-  color: #2563eb;
-  font-size: larger;
-  margin-bottom: 1rem;
-}
-
-
-/* CONTENEDOR EQUIPO */
-.equipo-container {
-  background-color: #93C5FD; 
+/* =======================================
+   WRAPPER GENERAL (MISMA PALETA)
+======================================= */
+.equipo-wrapper {
+  background-color: #93C5FD;
   width: 95%;
   margin: 2rem auto;
   padding: 2rem;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 2rem;
+  border-radius: 15px;
   position: relative;
-  border-radius: 10px;
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.15);
+}
+
+.titulo-seccion {
+  text-align: center;
+  color: #1e3a8a;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
 
 
-/* PERSONA */
-.persona {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
+/* =======================================
+   CONTENEDOR EQUIPO (RESPONSIVE GRID)
+======================================= */
+.equipo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 3rem;
+  padding: 1rem;
 }
 
 
-/* FOTO */
-.foto {
-  width: 200px;
-  height: 250px;
+/* =======================================
+   CARD PERSONA (CAJA MÁS GRANDE)
+======================================= */
+.persona-card {
+  background: #ffffff;
+  padding: 2.2rem 1.5rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.persona-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+
+/* =======================================
+   FOTO MÁS GRANDE + EFECTO
+======================================= */
+.persona-foto {
+  width: 320px;        /* MÁS GRANDE */
+  height: 320px;       /* MÁS GRANDE */
+  margin: auto;
   border-radius: 50%;
-  background-color: white;
-  border: 2px solid #2563eb;
   overflow: hidden;
+  border: 5px solid #2563eb;
+  box-shadow: 0 0 20px rgba(37,99,235,0.45);
 }
 
-.foto img {
+.persona-foto img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
 }
 
 
-/* BOTÓN LINKEDIN */
-.uiverse {
-  position: relative;
-  background: #ffffff;
-  color: #000;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 10px;
-  width: 150px;
-  height: 50px;
-  font-size: 17px;
-  display: flex;
-  justify-content: center;
+/* =======================================
+   NOMBRE
+======================================= */
+.persona-nombre {
+  margin-top: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+
+/* =======================================
+   BOTÓN LINKEDIN (MISMO ESTILO CORPORATIVO)
+======================================= */
+.btn-linkedin {
+  display: inline-flex;
   align-items: center;
-  flex-direction: column;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
+  justify-content: center;
+  gap: .5rem;
+  padding: 0.8rem 1.2rem;
+  margin-top: 0.8rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2563eb, #60A5FA);
+  color: white;
+  font-weight: 600;
   text-decoration: none;
-  transition: 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: .25s ease;
+  box-shadow: 0 4px 14px rgba(37,99,235,0.35);
 }
 
-.tooltip {
-  position: absolute;
-  top: 0;
-  font-size: 14px;
-  background: #ffffff;
-  padding: 5px 8px;
-  border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.tooltip::before {
-  content: "";
-  position: absolute;
-  height: 8px;
-  width: 8px;
-  background: #ffffff;
-  bottom: -3px;
-  left: 50%;
-  transform: translate(-50%) rotate(45deg);
-}
-
-.uiverse:hover .tooltip {
-  top: -45px;
-  opacity: 1;
-}
-
-.uiverse:hover,
-.uiverse:hover .tooltip,
-.uiverse:hover .tooltip::before {
-  background: linear-gradient(320deg, #2563EB, #93C5FD);
+.btn-linkedin:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 18px rgba(37,99,235,0.55);
 }
 
 
-/* DECORACIONES (solo desktop) */
+/* =======================================
+   DECORACIONES (MISMAS QUE SOBRE NOSOTROS)
+======================================= */
 .decoracion.puntos {
   position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 0.7rem;
 }
 
 .decoracion.puntos span {
@@ -126,76 +120,34 @@ p {
   height: 12px;
   border-radius: 50%;
   background: linear-gradient(135deg, #2563eb, #60A5FA);
-  box-shadow: 0 0 8px rgba(37, 99, 235, 0.6);
+  box-shadow: 0 0 10px rgba(37,99,235,0.6);
   animation: float 2s ease-in-out infinite;
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); opacity: 0.7; }
-  50% { transform: translateY(-8px); opacity: 1; }
+  0%, 100% { transform: translateY(0); opacity: .7; }
+  50% { transform: translateY(-7px); opacity: 1; }
 }
 
-.decoracion.puntos.bottom-left {
-  left: 1rem;
-  bottom: 1rem;
-}
-
-.decoracion.puntos.top-right {
-  right: 1rem;
-  top: 1rem;
-  flex-direction: row;
-}
-
-.decoracion.puntos.side-right {
-  right: 0.5rem;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.decoracion.lineas {
-  position: absolute;
-  width: 240px;
-  height: 12px;
-  background: repeating-linear-gradient(45deg,
-      #2563eb 0 6px,
-      transparent 6px 14px);
-  border-radius: 6px;
-  animation: slideRight 3s ease-in-out infinite;
-}
-
-.decoracion.lineas.bottom-right {
-  bottom: 1rem;
-  right: 1rem;
-}
-
-@keyframes slideRight {
-  0%, 100% { transform: translateX(0); opacity: 0.6; }
-  50% { transform: translateX(8px); opacity: 1; }
-}
+.puntos.top-right { right: 1rem; top: 1rem; flex-direction: row; }
+.puntos.bottom-left { left: 1rem; bottom: 1rem; }
 
 
-/* RESPONSIVE */
-@media (max-width: 992px) {
+/* =======================================
+   RESPONSIVE
+======================================= */
+@media (max-width: 768px) {
 
-  /* FOTO MÁS CHICA */
-  .foto {
-    width: 120px;
-    height: 150px;
-    border-radius: 50%;
+  .persona-foto {
+    width: 180px;
+    height: 180px;
   }
 
-  /* EQUIPO EN COLUMNA, CENTRADO */
-  .equipo-container {
-    flex-direction: column;
-    width: 100%;
-    margin: 1rem auto;
-    padding: 1.5rem;
-    gap: 1.5rem;
-  }
-
-  /* OCULTAR DECORACIONES */
-  .decoracion.lineas,
   .decoracion.puntos {
     display: none;
+  }
+
+  .titulo-seccion {
+    font-size: 1.8rem;
   }
 }
