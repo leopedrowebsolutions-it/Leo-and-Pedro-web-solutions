@@ -1,9 +1,13 @@
-
-
 :host {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+* {
+  background-color: #fefefe;
+}
+app-barra-de-navegacion {
+  background-color: #010810;
 }
 
 .main-content {

@@ -1,88 +1,73 @@
+.container{
+    margin-top: 5px;
+}
 
-    *{ box-sizing: border-box; }
-    :host, .container { font-family: 'Poppins', sans-serif; }
-    .container{ margin: 2%; max-width: 1100px; }
 
-    .clickeable{
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        gap: 0.6rem;
-        padding: 0.4rem 0.2rem;
-        transition: transform 0.18s ease;
-    }
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 20px 4px #e6e6e6;
 
-    .clickeable:hover{
-        transform: translateX(5%) scale(1.06);
-    }
+}
+li{
+    list-style: none;
+    max-width: 22%;
+    margin: 1%;
+}
+p{
+    max-width: 80%;
+    font-size: 1em;
+}
+/* zona iconos */
+.icon
+{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
 
-    img.tilde{
-        width: 34px;
-        height: auto;
-    }
+    background-color: #01397e; /* 🔥 color del icono */
 
-    img.imgpopup{
-        width: 50%;
-        height: auto;
-        max-height: 400px;
-        margin-top: 15px;
-    }
+    -webkit-mask: url('src/assets/home.svg') no-repeat center;
+    mask: url('src/assets/home.svg') no-repeat center;
 
-    /* Fondo oscuro */
-    .popup-backdrop {
-        position: fixed;
-        inset: 0;
-        background: repeating-radial-gradient(circle at 50%, rgb(26, 133, 233,0.5), rgb(104, 183, 230) 1em, #D9D9D9 1em, white 2em);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-    }
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
 
-    /* Contenedor del popup */
-    .popup {
-        display: flex;
-        background: #fff;
-        padding: 20px 30px;
-        border-radius: 10px;
-        position: relative;
-        animation: popupIn 0.5s ease;
-        max-width: 900px;
-        width: calc(100% - 40px);
-    }
 
-    /* Botón de cerrar */
-    .close-btn {
-        margin-top: 15px;
-        background: #e63946;
-        color: white;
-        border: none;
-        padding: 8px 15px;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    .close-btn:hover {
-        background: #c71c2b;
-    }
+/* cambio de iconos */
+.icon.code
+{
+    -webkit-mask: url('src/assets/code.svg') no-repeat center;
+    mask: url('src/assets/code.svg') no-repeat center;
+}
 
-    .invisible{ display: none; }
+.icon.phone
+{
+    -webkit-mask: url('src/assets/device-mobile.svg') no-repeat center;
+    mask: url('src/assets/device-mobile.svg') no-repeat center;
+}
 
-    /* Animación de entrada */
-    @keyframes popupIn {
-        0% { 
-            opacity: 0; 
-            transform: scale(0);
-            border-radius: 50% 
-        }
-        100% { 
-            opacity: 1;
-            transform: scale(1);
-            border-radius: 0% 
-        }
-    }
+.icon.rocket
+{
+    -webkit-mask: url('src/assets/rocket.svg') no-repeat center;
+    mask: url('src/assets/rocket.svg') no-repeat center;
+}
 
-    @media screen and (max-width: 450px) {
-        .container{ margin: 0.5rem; }
-        img.tilde{ width: 28px; }
-        img.imgpopup{ display: none; }
-    }
+.icon.headset
+{
+    -webkit-mask: url('src/assets/headset.svg') no-repeat center;
+    mask: url('src/assets/headset.svg') no-repeat center;
+}
+
+@media screen and (max-width: 450px) {
+
+*{
+    display: none;
+}
+}

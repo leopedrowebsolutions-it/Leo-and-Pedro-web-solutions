@@ -1,43 +1,146 @@
 
-/* Reducir altura de la navbar */
-.navbar {
-  padding-top: 0.25rem;   /* 🔹 menos padding arriba */
-  padding-bottom: 0.25rem; /* 🔹 menos padding abajo */
-  border-radius: 0% 0% 10% 10%;
+*{
+  background-color: #010810;
+}
+  /* boton Hamburgueza */
+.custom-hamburger{
+  border: none;
+  background: transparent;
+  padding: 5px;
+}
+
+.custom-hamburger::after {
+  display: none; /* elimina flechita */
+}
+
+/* líneas */
+span.bar {
+    display: block;
+    width: 35px;
+    height: 4px;
+    background-color: white;
+    margin: 8px 0;
+    border-radius: 8px;
+}
+
+/* estilo del menú lateral */
+.dropdown-menu {
+  min-width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* opcional: efecto más "panel" */
+.dropend .dropdown-menu {
+  margin-left: 10px;
+  border-color: blue;
+}
+
+
+/* Componenetes de lista */
+li{
+  display: flex;
+  align-items: center;
 }
 
 
 
+/* zona iconos */
+.icon{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
 
+  background-color: blue; /* 🔥 color del icono */
 
-/*agrando los anchor*/
-.nav-link{
-  font-size: 2rem;
+  -webkit-mask: url('src/assets/home.svg') no-repeat center;
+  mask: url('src/assets/home.svg') no-repeat center;
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
 }
 
-.nav-link:hover{
-  animation: slideIn 1.5s ease infinite;
+.icon-redes{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+
+  background-color: blue; /* 🔥 color del icono */
+
+  -webkit-mask: url('src/assets/home.svg') no-repeat center;
+  mask: url('src/assets/home.svg') no-repeat center;
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
 }
-@keyframes slideIn {
-  0%, 100% {
-    color: #555556;
-    
+
+/* cambio de iconos*/
+.icon.cube{
+  -webkit-mask: url('src/assets/cube.svg') no-repeat center;
+  mask: url('src/assets/cube.svg') no-repeat center;
+}
+.icon.papa{
+  -webkit-mask: url('src/assets/briefcase.svg') no-repeat center;
+  mask: url('src/assets/briefcase.svg') no-repeat center;
+}
+.icon.users{
+  -webkit-mask: url('src/assets/users.svg') no-repeat center;
+  mask: url('src/assets/users.svg') no-repeat center;
+}
+
+.icon-redes.instagram{
+  -webkit-mask: url('src/assets/brand-instagram.svg') no-repeat center;
+  mask: url('src/assets/brand-instagram.svg') no-repeat center;
+}
+
+.icon-redes.mail{
+  -webkit-mask: url('src/assets/mail.svg') no-repeat center;
+  mask: url('src/assets/mail.svg') no-repeat center;
+}
+
+.icon-redes.linkedin{
+  -webkit-mask: url('src/assets/brand-linkedin.svg') no-repeat center;
+  mask: url('src/assets/brand-linkedin.svg') no-repeat center;
+}
+
+/* redes boton hamburguesa */
+.redesMenuHamb{
+  display: flex;
+}
+
+.dropdown-item{
+  font-size: large;
+  padding-top: 0px;
+  color:white;
+}
+
+li:hover{
+  background-color: white;
+  border-radius: 5px;
+  .dropdown-item{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
   }
-  50% {
-    color: #60A5FA ;  
-    transform: scale(1.1);
+  .icon{
+    background-color:black;
   }
-
 }
 
 
 
-
-/* Achicar logo */
-.navbar-brand img {
-  height: 60px; /* 🔹 antes era 84px */
-  width: auto;
+/* reglas especiales */
+.li-especiales:hover{
+  background-color: transparent;
+  .dropdown-item{
+    background-color: transparent;
+    color: transparent;
+  }
+  .icon{
+    background-color:#01397e ;
+  }
 }
+
 @media screen and (max-width: 450px) {
 
   app-booton-contactanos{
